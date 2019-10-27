@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>А 6.8 Прогресс бар</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+  <div class="w3-container">
+
+  <h2>Progress bar</h2>
+
+  <div class="w3-light-grey">
+    <div id="myBar" class="w3-container w3-green w3-center" style="width:0%">0%</div>
+  </div>
+  <br>
+  <button class="button" onclick="move()">+1%</button> 
+  <button class="button" onclick="move3()">+3%</button> 
+  <button class="button" onclick="move7()">+7%</button> 
+</div>
+
+<script>
+
+    let width = 0;
+        
+    function move() {
+  let elem = document.getElementById("myBar");
+    if (width < 100) {
+      width+=1;
+      elem.style.width = width + '%';
+      elem.innerHTML = width * 1 + '%';
+        }
+    }
+
+    function move3() {
+  let elem = document.getElementById("myBar");
+    if (width < 100) {
+      width+=3;
+      elem.style.width = width + '%';
+      elem.innerHTML = width * 1 + '%';
+        }
+    }
+
+    function move7() {
+  let elem = document.getElementById("myBar");
+    if (width < 100) {
+      width+=7;
+      elem.style.width = width + '%';
+      elem.innerHTML = width * 1 + '%';
+        }
+    }
+
+</script>
+
+</body>
+</html> 
